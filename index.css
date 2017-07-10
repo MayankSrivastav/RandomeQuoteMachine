@@ -2,3 +2,11 @@ footer,
 .new-tweet {
   float: right;
 }
+
+.btn {
+  border: 0.5px solid black;
+}
+
+hr {
+ border-top: 1px solid #0c6ff0;
+}
