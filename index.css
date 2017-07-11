@@ -10,3 +10,11 @@ footer,
 hr {
  border-top: 1px solid #0c6ff0;
 }
+
+body {
+  background-color: #e4871e;
+}
+
+blockquote {
+  border-left: 2px solid #12a203;
+}
