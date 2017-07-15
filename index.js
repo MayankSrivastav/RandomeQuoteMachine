@@ -21,3 +21,14 @@ var quotesObj = [
     author: "- Rick Osborne"
   }
 ];
+
+var cquote = "";
+var cauthor = "";
+function setText() {
+  var quoteNum = Math.floor(Math.random() * 5);       
+  
+  cquote = quotesObj[quoteNum].quote;
+  cauthor = quotesObj[quoteNum].author;
+  $(".blockquote").text(quotesObj[quoteNum].quote);    
+  $(".cite").text(quotesObj[quoteNum].author);      
+}
