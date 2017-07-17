@@ -32,3 +32,15 @@ function setText() {
   $(".blockquote").text(quotesObj[quoteNum].quote);    
   $(".cite").text(quotesObj[quoteNum].author);      
 }
+
+$(function() {  
+  setText();
+  
+  $(".new-quote").click(function() {            
+    setText();
+  });
+  
+  $(".new-tweet").click(function() {
+    $(this).attr('href', 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + encodeURIComponent('"' + cquote + '" ' + cauthor));
+  });
+});
